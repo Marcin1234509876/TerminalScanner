@@ -17,6 +17,7 @@ var style = workbook.createStyle({
       size: 12
     }
   });
+
 database.loadDatabase();
 
 
@@ -43,6 +44,7 @@ database.loadDatabase();
              if(err){
                  res.end();
              }
+             res.write('replaced: '+ numReplaced);
              res.end();
          });
          res.end();
@@ -55,6 +57,7 @@ app.get('/api', (req, res)=>{
             res.end();
         };
         res.write(JSON.stringify(data));
+        
         console.log(JSON.stringify(data));
         res.end();
     });
@@ -83,7 +86,8 @@ app.post("/api", (req, res)=>{
             Telephone: telephone,
             Operator: operator
         });
-        console.log("insert succesfull")
+        console.log("insert succesfull");
+        res.write('insert succesfull');
         res.end();
     
 })

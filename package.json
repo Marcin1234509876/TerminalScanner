@@ -3,5 +3,8 @@
     "excel4node": "^1.7.2",
     "express": "^4.17.2",
     "nedb": "^1.8.0"
+  },
+  "scripts": {
+    "run": "node server.js"
   }
 }

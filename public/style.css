@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header{
+    background-image: linear-gradient(to top right,#ba03fc, #0356fc);
+    height: 100px;
+    color: white;
+
+}
+
+.form{
+    
+    color: white;
+    font-weight: bold;
+    
+    padding: 10px;
+    
+    
+}
+input{
+    border: 0px solid black;
+    border-radius: 1000px;
+    background-color:white;
+    float: right;
+}
+
+form{
+    display: inline-block;
+    padding: 10px;
+}
+#d1{
+    background-image: linear-gradient(to bottom right,#ba03fc, #0356fc);
+}
+#d2{
+    background-image: linear-gradient(to top right,#ba03fc, #0356fc);
+}
+#d3{
+    background-image: linear-gradient(to bottom right,#ba03fc, #0356fc);
+}

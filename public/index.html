@@ -1,46 +1,57 @@
 <html>
     <head>
-
+        <meta charset="utf-8">
+        <title>terminal scanner</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-
-        <h1>Wprowadź dane do bazy danych</h1><br>
+        <header>
+            <h1 style="margin:20px; margin-top:20px;">
+                Terminal scanner
+            </h1>
+            <h5 style="visibility: hidden;">
+                definitely not a scam site!
+            </h5>
+        </header>
+        <div class="form" id="d1">
+        <h2>Wprowadź dane do bazy danych</h2><br>
         <form action="/api" method="POST" target="_blank">
-            imei: <input type="text" name="IMEIinsert" id="imei" value="3540181188"><br>
-            card number: <input type="text" name="CARDNUMBER" id="card" value="8948031957409638"><br>
-            serial number: <input type="text" name="SERIALNUMBER" value="111256"><br>
-            comment: <input type="text" name="COMMENT" id="comment" value="LO"><br>
-            model: <input type="text" name="MODEL" id="model" value="FMB900"><br>
-            firmware: <input type="text" name="FIRMWARE" id="firmware" value="FMB.Ver.03.27.07.Rev.00.e
-            "><br>
-            telephone: <input type="text" name="TELEPHONE" id="telephone" value="571564"> (optional)<br>
-            operator: <input type="text" name="OPERATOR" id="operator" value="Orange"><br>
-            <input type="submit" value="ok">
+            imei: <input type="text" name="IMEIinsert" id="imei" ><br>
+            card number: <input type="text" name="CARDNUMBER" id="card" ><br>
+            serial number: <input type="text" name="SERIALNUMBER" ><br>
+            comment: <input type="text" name="COMMENT" id="comment" ><br>
+            model: <input type="text" name="MODEL" id="model" ><br>
+            firmware: <input type="text" name="FIRMWARE" id="firmware" ><br>
+            telephone: <input type="text" name="TELEPHONE" id="telephone"> (optional)<br>
+            operator: <input type="text" name="OPERATOR" id="operator" ><br>
+            <input type="submit" class="submit" value="wprowadź">
         </form><br>
-
-
-        <h1>Wyszukaj za pomocą IMEI</h1>
+        </div>
+        <div class="form" id="d2">
+        <h2>Wyszukaj za pomocą IMEI</h2>
         <form method="get" action="/api" target="_blank">
             imei: <input type="text" name="IMEI">
-            <input type="submit" value="szukaj">
+            <input type="submit" class="submit" value="szukaj">
             
 
         </form><br>
-        <h1>zmodyfikuj rekord przez IMEI</h1>
+        </div>
+        <div class="form" id="d3">
+        <h2>zmodyfikuj rekord przez IMEI</h2>
         <form method="GET" action="/update">
-            imei: <input type="text" name="IMEIupdate" id="imeiupdate" value="3540181188"><br>
-            card number: <input type="text" name="CARDNUMBERupdate" id="card" value="4604100024"><br>
-            serial number: <input type="text" name="SERIALNUMBERupdate" value="111256"><br>
+            imei: <input type="text" name="IMEIupdate" id="imeiupdate" ><br>
+            card number: <input type="text" name="CARDNUMBERupdate" id="card" ><br>
+            serial number: <input type="text" name="SERIALNUMBERupdate" ><br>
             comment: <input type="text" name="COMMENTupdate" id="comment"><br>
-            model: <input type="text" name="MODELupdate" id="model" value="FMB900"><br>
-            firmware: <input type="text" name="FIRMWAREupdate" id="firmware" value="FMB.Ver.03.27.07.Rev.00.e
-            "><br>
-            telephone: <input type="text" name="TELEPHONEupdate" id="telephone"> (optional)<br>
-            operator: <input type="text" name="OPERATORupdate" id="operator" value="telit m2m air"><br>
-            <input type="submit" value="ok">
+            model: <input type="text" name="MODELupdate" id="model" ><br>
+            firmware: <input type="text" name="FIRMWAREupdate" id="firmware" ><br>
+            telephone: <input type="text" name="TELEPHONEupdate" id="telephone"><br>
+            operator: <input type="text" name="OPERATORupdate" id="operator"><br>
+            <input type="submit" class="submit" value="modyfikuj">
         </form>
         <br>
+        </div>
 
 
         <!-- <form method="GET" action="/export">
